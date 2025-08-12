@@ -1,0 +1,17 @@
+<script>
+let maxAge = 200;
+let numPerDay = 5;
+let age = window.prompt("Enter your age");
+let sure = window.confirm('Is ${age} your actual age')
+if (!sure){
+    let totalRequired = (numPerDay * 365) * (maxAge - age);
+    console.log("You will need " + totalRequired + "To last you until the ripe old age of " + maxAge);
+}
+else{
+    console.log("What is your true age?");
+}
+
+
+ 
+
+</script>
