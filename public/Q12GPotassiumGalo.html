@@ -2,25 +2,27 @@
 <html>
 <body>
 
-    <h2>Q1 2nd Graded Exercise submitted by Diego Galo</h2>
-        <label for="fname">Meal Price:</label>
-        <input type="number" id="mp" name="mp"><br><br>
-        <label for="lname">Tip:</label>
-        <input type="number" id="tip" name="tip"><br><br>
-        <label for="sname">Service Charge:</label>
-        <input type="number" id="sc" name="sc"><br><br>
-        <input type="submit" value="Accept Input">
+    <h2>Q! 2nd Graded Exercise Submitted by Diego Galo of 9-Potassium</h2>
+  
+  <label for="Meal Price">Meal Price:</label>
+  <input type ="text" id="mp" name="mp"><br><br>
+  <label for ="Tip">Tip:</label>
+  <input type ="text" id="tip" name="tip"><br><br>
+  <label for ="Service Charge">Service Charge:</label>
+  <input type = "text" id="sc" name="sc"><br><br>
+  <button onclick="totalCost()">Total Cost: </button>
+  <p><span id="TotalCost"></span></p>
 
     <script>
-        function totalMeal() {
-             totalCost = mp + tip + (%sc / 100 * mp)
-
-
+        function totalCost() {
+            var mp = parseFloat(document.getElementById("mp").value);
+            var tip = parseFloat(document.getElementById("tip").value);
+            var sc = parseFloat(document.getElementById("sc").value);
+            var total = mp + tip + (sc / 100 * mp)
+            let t = total.toFixed(2);
+            document.getElementById("TotalCost").innerHTML = "Total Cost: " + t;
+        
         }
-
     </script>
 </body>
-
 </html>
-
-Sources: https://www.w3schools.com/tags/tag_input.asp
