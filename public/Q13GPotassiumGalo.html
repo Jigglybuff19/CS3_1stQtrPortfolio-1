@@ -6,28 +6,31 @@
     <p>Guess the number: ****</p>
     <p>The number is from 1 to 100</p>
     <label for="Enter Guess">Enter your guess:</label>
-    <input type ="text" id="guess" name="guess"><br><br>
+    <input id="guess"><br><br>
     <button onclick="checkIt()">Check It</button>
-    <p id ="Result"></p>
+    <p>Result: <span id ="Result"></span></p>
+
     <script>
         var dnumber = Math.floor(Math.random() * 100) + 1;
-        const guess = parseFloat(document.getElementById("guess").value);
-        let result;
         function checkIt() {
-        if (guess < dnumber) {
+        let guess = Number(document.getElementById("guess").value);
+        let result;
+
+        if (guess > dnumber) {
             result = "Lower";
         }
-        if (guess > dnumber){
+        else if (guess < dnumber){
             result = "Higher";
-        if (guess = dnumber){
-            result = "You are correct!";
         }
-            
+        else if (guess == dnumber){
+            result = "You got the correct number!";
         }
          document.getElementById("Result").innerHTML = result;
         }
-    
    
+           
     </script>
 </body>
 </html>
+ <footer>
+        <p>Sources: W3Schools.com. (n.d.-b). https://www.w3schools.com/js/js_if_else.asp</p>
