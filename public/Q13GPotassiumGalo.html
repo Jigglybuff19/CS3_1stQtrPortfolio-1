@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+    <h2>Q1 3rd Graded Exercise Submitted by Diego Galo of 9-Potassium</h2>
+    <p>Guess the number: ****</p>
+    <p>The number is from 1 to 100</p>
+    <label for="Enter Guess">Enter your guess:</label>
+    <input type ="text" id="guess" name="guess"><br><br>
+    <button onclick="checkIt()">Check It</button>
+    <p id ="Result"></p>
+    <script>
+        var dnumber = Math.floor(Math.random() * 100) + 1;
+        const guess = parseFloat(document.getElementById("guess").value);
+        let result;
+        function checkIt() {
+        if (guess < dnumber) {
+            result = "Lower";
+        }
+        if (guess > dnumber){
+            result = "Higher";
+        if (guess = dnumber){
+            result = "You are correct!";
+        }
+            
+        }
+         document.getElementById("Result").innerHTML = result;
+        }
+    
+   
+    </script>
+</body>
+</html>
