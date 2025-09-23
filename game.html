@@ -1,0 +1,41 @@
+<h1>Guess My Word</h1>
+<p id="wordDisplay"></p>
+<input type="text" id="guessInput" maxlength="1">
+<button onclick="makeGuess()">Guess</button>
+<p id="message"></p>
+
+<script>
+  let secretWord = ["D", "a", "r", "i", "n", "g", "D", "i", "e", "g", "o"];
+  let guessedWord = ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_",];
+
+  document.getElementById("wordDisplay").textContent = guessedWord.join(" ");
+
+  function makeGuess() {
+    let attempts = 3;
+    let guess = document.getElementById("guessInput").value
+    let correct = false;
+    if (attempts <= 0) {
+      document.getElementById("message").textContent = "Game Over! The word was " + secretWord.join("");
+      return;
+    }
+    elseif (attemps > 0) {
+
+    
+    for (let i = 0; i < secretWord.length; i++) {
+      
+      return;
+      if (secretWord[i] === guess) {
+        guessedWord[i] = guess;
+        correct = true;
+        attempts--;
+      }
+    }
+  }
+  }
+  
+    document.getElementById("wordDisplay").textContent = guessedWord.join(" ");
+    document.getElementById("message").textContent = correct ? "✅ Correct!" : "❌ Try again.";
+    document.getElementById("guessInput").value = "";
+  
+
+</script>
