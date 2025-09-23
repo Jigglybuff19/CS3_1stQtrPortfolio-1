@@ -20,7 +20,7 @@
 
     4. **Adding designs in general** - while it has been discussed only very shortly, I know that is might be the second most important part of coding after the code itself. Without designs, your project becomes bland and uninteresting, same as everyone else's. If I can make my outputs look way better, it would be very cool to show to other people.
 
-    5. **
+    5. **Different ways of doing the same thing** - Even though it is a broad topic, I still feel like I need to learn more ways of doing the same thing. Whether it be the simple things or the complex ones, I know that with more tools under my belt, the better my products will be. 
 
  ### Describe on what will be your plan of action in order to help yourself in understanding further the topics listed on the second items.
 
@@ -29,4 +29,4 @@
  ### In the activities that were done in class, list at least two that you think were effective and at least two that you think not effective in helping you understand topics in our course and why?
  > The activities that I find more effective in general is when we get the freedom to make our own small short code projects after learning a certain lesson just to see how we can apply and edit it according to our needs. This is the best way for me personally as it makes the lesson more fun and makes it so I can actually use it in real life coding. 
 
- > The activities I find less effective are the google forms as I feel that lesson does not really stick with me as I do not actually use the methods taught,
+ > The activities I find less effective are the google forms as I feel that lesson does not really stick with me as I do not actually use the methods taught, instead I click a button for multiple choice. I may sometimes remember it but it nowhere close to actually using the lesson in vscode.
